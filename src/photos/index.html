@@ -1,0 +1,9 @@
+---
+title: photos
+---
+
+<h1>{{ title }}</h1>
+
+{% for photo in photos %}
+<p data-id="{{ photo.id }}" data-album-id="{{ photo.albumId }}">{{ photo.title }}</p>
+{% endfor %}
